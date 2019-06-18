@@ -88,8 +88,12 @@ class MyFframe extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO 自动生成的方法存根
 				
+				try {
 				numString=numString.substring(0, numString.length()-1);
 				field.setText(numString);
+				} catch (Exception e) {
+					//什么也不做
+				}
 			}
 		});
 		
